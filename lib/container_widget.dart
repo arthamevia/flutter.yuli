@@ -7,9 +7,11 @@ class ContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      width: 200,
+      width: 300,
       decoration: BoxDecoration(
-        color: Colors.blue,
+        gradient: LinearGradient(
+          colors: [Colors.blueAccent, Colors.black26],
+        ),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Center(
