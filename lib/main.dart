@@ -1,4 +1,5 @@
 import 'package:example/column_widget.dart';
+import 'package:example/container_widget.dart';
 import 'package:example/row_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: "Latihan Flutter",
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.pink,
           centerTitle: true,
           title: Text("Latihan"),
         ),
@@ -26,6 +27,9 @@ class MyApp extends StatelessWidget {
               padding: EdgeInsets.only(top: 10),
             ),
             ColumnWidget(),
+            Padding(
+              padding: EdgeInsets.only(top: 10)),
+            ContainerWidget(),
           ],
         ),
       ),
