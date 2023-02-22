@@ -48,10 +48,10 @@ class MyApp extends StatelessWidget {
               //   child: ListProduct(),
               // ),
               Padding(padding: EdgeInsets.only(top: 10)),
-              Text("Tugas"),
+              Text("YULIYANTI ARTHAMEVIA"),
               Container(
-                margin: EdgeInsets.all(16),
-                height: 80,
+                
+                height: 700,
                 child: Tgs3Widget(),
               )
             ],
