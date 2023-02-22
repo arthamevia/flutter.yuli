@@ -2,64 +2,69 @@ import 'package:flutter/material.dart';
 
 class Tgs3Widget extends StatelessWidget {
   Tgs3Widget({super.key});
-  
+
   final List profil = [
-    "img/uli.jpg",
-    "PIXEL",
-    "LAPTOP",
-    "TABLET",
-    "PENDRICVE"
-  ];
-
-  final List photos = [
-    "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro-max-.jpg",
-    "https://fdn2.gsmarena.com/vv/bigpic/google-pixel7-pro-new.jpg",
     "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
     "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
-    "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-neo5-240w.jpg",
+    "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+    "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+    "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
   ];
 
-  final List desc = [
-    "Lorem ipsum",
-    "Lorem ipsum",
-    "Lorem ipsum",
-    "Lorem ipsum",
-    "Lorem ipsum",
-  ];
-  final List price = [
-    "Rp.5.000.000",
-    "Rp.5.000.000",
-    "Rp.5.000.000",
-    "Rp.5.000.000",
-    "Rp.5.000.000",
-  ];
+  // final List kotak = [
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  // ];
+  // final List kotak2 = [
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  //   "assets/img/uli.jpg",
+  // ];
+
+  // final List resto = [
+  //   "Restaurant Name",
+  //   "Restaurant Name",
+  //   "Restaurant Name",
+  //   "Restaurant Name",
+  //   "Restaurant Name",
+  // ];
+  // final List adres = [
+  //   "Address",
+  //   "Address",
+  //   "Address",
+  //   "Address",
+  //   "Address",
+  // ];
+  // final List dish = [
+  //   "Dish Name",
+  //   "Dish Name",
+  //   "Dish Name",
+  //   "Dish Name",
+  //   "Dish Name",
+  //
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 300,
-      child: ListView.builder(
-        itemBuilder: (context, index) {
-          return Card(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Image.network(photos[index]),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(nameProduct[index]),
-                    Text(desc[index]),
-                    Text(price[index]),
-                  ],
-                )
-              ],
-            ),
-          );
-        },
-        itemCount: nameProduct.length,
-      ),
+    Container();
+    return ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: profil.length,
+      itemBuilder: (context, index) {
+        return Row(
+          children: [
+            Padding(padding: EdgeInsets.all(10)),
+            CircleAvatar(
+              radius: 40,
+              backgroundImage: NetworkImage(profil[index]),
+            )
+          ],
+        );
+      },
     );
   }
-
 }

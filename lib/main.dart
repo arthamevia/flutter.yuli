@@ -8,6 +8,7 @@ import 'package:example/lthnlist.dart';
 import 'package:example/row_widget.dart';
 import 'package:example/list_view/list_view.dart';
 import 'package:example/list_view/list_view_builder.dart';
+import 'package:example/tgs3.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,20 +32,27 @@ class MyApp extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Padding(padding: EdgeInsets.only(top: 10, bottom: 10)),
-              Text("Produk Handphone Terlaris"),
-              Container(
-                margin: EdgeInsets.all(10),
-                height: 75,
-                child: ListViewBuilderWidget(),
-              ),
+              // Padding(padding: EdgeInsets.only(top: 10, bottom: 10)),
+              // Text("Produk Handphone Terlaris"),
+              // Container(
+              //   margin: EdgeInsets.all(10),
+              //   height: 75,
+              //   child: ListViewBuilderWidget(),
+              // ),
+              // Padding(padding: EdgeInsets.only(top: 10)),
+              // Text("Produk HP"),
+              // Padding(padding: EdgeInsets.only(top: 10)),
+              // Container(
+              //   margin: EdgeInsets.all(16),
+              //   height: 520,
+              //   child: ListProduct(),
+              // ),
               Padding(padding: EdgeInsets.only(top: 10)),
-              Text("Produk HP"),
-              Padding(padding: EdgeInsets.only(top: 10)),
+              Text("Tugas"),
               Container(
                 margin: EdgeInsets.all(16),
-                height: 520,
-                child: ListProduct(),
+                height: 80,
+                child: Tgs3Widget(),
               )
             ],
           ),
