@@ -1,5 +1,8 @@
 import 'package:example/column_widget.dart';
 import 'package:example/container_widget.dart';
+import 'package:example/latihan1.dart';
+import 'package:example/latihan2.dart';
+import 'package:example/latihan3.dart';
 import 'package:example/row_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,16 +23,24 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text("Latihan"),
         ),
+        backgroundColor: Colors.blue,
         body: Column(
           children: [
-            RowWidget(),
-            Padding(
-              padding: EdgeInsets.only(top: 10),
-            ),
-            ColumnWidget(),
-            Padding(
-              padding: EdgeInsets.only(top: 10)),
-            ContainerWidget(),
+            ListView(),
+            // Padding(padding: EdgeInsets.only(top: 20)),
+            // LatihanWidget(),
+            // Padding(padding: EdgeInsets.only(top: 20)),
+            // LatihannWidget(),
+            // Padding(padding: EdgeInsets.only(top: 20)),
+            // LatihannnWidget(),
+            // RowWidget(),
+            // Padding(
+            //   padding: EdgeInsets.only(top: 10),
+            // ),
+            // ColumnWidget(),
+            // Padding(
+            //   padding: EdgeInsets.only(top: 10)),
+            // ContainerWidget(),
           ],
         ),
       ),
