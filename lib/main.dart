@@ -4,6 +4,8 @@ import 'package:example/latihan1.dart';
 import 'package:example/latihan2.dart';
 import 'package:example/latihan3.dart';
 import 'package:example/row_widget.dart';
+import 'package:example/list_view/list_view.dart';
+import 'package:example/list_view/list_view_builder.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +28,11 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue,
         body: Column(
           children: [
-            ListView(),
+            Padding(padding: EdgeInsets.only(top: 20)),
+            ListViewWidget(),
+            Padding(padding: EdgeInsets.only(top: 20)),
+
+            ListViewBuilderWidget(),
             // Padding(padding: EdgeInsets.only(top: 20)),
             // LatihanWidget(),
             // Padding(padding: EdgeInsets.only(top: 20)),
