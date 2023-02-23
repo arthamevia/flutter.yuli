@@ -47,8 +47,7 @@ class MyApp extends StatelessWidget {
               //   height: 520,
               //   child: ListProduct(),
               // ),
-              Padding(padding: EdgeInsets.only(top: 10)),
-              Text("YULIYANTI ARTHAMEVIA"),
+          
               Container(
                 
                 height: 700,
